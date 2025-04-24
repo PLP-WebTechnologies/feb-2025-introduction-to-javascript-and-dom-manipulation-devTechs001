@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .color-box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .new-element {
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #4CAF50;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript and DOM Manipulation</h1>
+        <p>Demonstrating dynamic content changes, style modifications, and element manipulation</p>
+    </header>
+
+    <section id="text-section">
+        <h2>Dynamic Text Content</h2>
+        <p id="dynamic-text">This text will change when you click the button below.</p>
+        <button id="change-text-btn">Change Text</button>
+    </section>
+
+    <section id="style-section">
+        <h2>CSS Style Modification</h2>
+        <div id="color-box" class="color-box">Color Box</div>
+        <button id="change-color-btn">Change Color</button>
+        <button id="change-size-btn">Change Size</button>
+    </section>
+
+    <section id="element-section">
+        <h2>Adding and Removing Elements</h2>
+        <div id="elements-container">
+            <!-- Elements will be added here -->
+        </div>
+        <button id="add-element-btn">Add Element</button>
+        <button id="remove-element-btn">Remove Element</button>
+    </section>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
